@@ -7,3 +7,11 @@ window.onscroll=function(){
         header.classList.remove('active');
     }
 }
+
+let links = document.querySelector(".links");
+console.log(links);
+
+function  close_show_Menu(){
+    links.classList.toggle("active-link");
+
+}
