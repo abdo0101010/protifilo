@@ -531,11 +531,9 @@ img {
 
             i {
                 width: 45px;
-                background-color: var(--second-color);
                 height: 45px;
                 line-height: 45px;
                 line-height: 45px;
-                color: var(--main-color);
                 font-size: 30px;
                 border-radius: 5px;
 
@@ -843,18 +841,22 @@ header .links img,
 }
 
 @media (max-width:500px) {
+    header{
+        margin-bottom: 0px;
+    }
     .hero {
 
         flex-direction: column;
         gap: 10px;
         width: 100%;
         height: auto;
+        margin-top: 0px;
 
         .hero-img {
             width: 100%;
         }
 
-        padding: 30px 30px;
+
 
 
         h1 {
@@ -885,6 +887,10 @@ header .links img,
 
 
     .about {
+        flex-direction: column;
+        width: 100%;
+        padding: 0%;
+
         h1 {
             font-size: 30px;
         }
@@ -902,6 +908,7 @@ header .links img,
 
         .about-img {
             width: 100%;
+            padding: 0%;
         }
 
         .hire {
@@ -910,43 +917,56 @@ header .links img,
 
         .about-text {
             width: 100%;
+            padding: 10px 10px;
         }
 
         .about-img {
-            width: 70%;
-            height: 450px;
+            display: none;
         }
 
         .skills {
+            h4 {
+
+                width: 100%;
+            }
+
             flex-direction: column;
             gap: 15px;
         }
     }
 
+    header .navbar {
+        .logo h1 {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        gap: 5px;
+    }
+
     header .icon {
+
+        a,
+        span {
+            font-size: 10px;
+            gap: 2px;
+        }
+
+        span i {
+            margin-left: 0px;
+
+            font-size: 19px;
+        }
+
         .icon-menu {
             display: block;
-            margin-left: 10px;
-            font-size: 20px;
+            margin-left: 7px;
+            font-size: 10px;
         }
 
-        .hero {
-            width: 100%;
 
-            .hero-text {
-                width: 100%;
-            }
 
-            margin-top: 70px;
 
-            h1 {
-                font-size: 40px;
-            }
-
-            h2 {
-                font-size: 30px;
-            }
-        }
     }
 
     .services {
@@ -968,10 +988,30 @@ header .links img,
         }
     }
 
+    .hero {
+        width: 100%;
+
+        .hero-text {
+            width: 100%;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        margin-top: 70px;
+
+
+    }
+
     .content {
         .top-content {
             h2 {
-                font-size: 40px;
+                font-size: 30px;
             }
         }
 
